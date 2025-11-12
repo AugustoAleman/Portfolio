@@ -5,14 +5,9 @@
       "description": "Python"
     },
     {
-        "title": "C++",
-        "image": "c++.png",
-        "description": "C++"
-    },
-    {
-      "title": "JavaScript",
-      "image": "javascript.png",
-      "description": "JavaScript"
+      "title": "Amazon Web Services",
+      "image": "aws.png",
+      "description": "Amazon Web Services"
     },
     {
       "title": "React",
@@ -20,29 +15,24 @@
       "description": "React"
     },
     {
-        "title": "HTML",
-        "image": "html.png",
-        "description": "HTML"
+      "title": ".Net",
+      "image": "net.png",
+      "description": ".Net"
+    },
+        {
+        "title": "FastAPI",
+        "image": "fastapi.png",
+        "description": "FastAPI"
     },
     {
-        "title": "CSS",
-        "image": "css.png",
-        "description": "CSS"
+        "title": "Flask",
+        "image": "flask.png",
+        "description": "Flask"
     },
     {
-        "title": "Git",
-        "image": "git.png",
-        "description": "Git"
-    },
-    {
-        "title": "MySQL",
-        "image": "mysql.png",
-        "description": "MySQL"
-    },
-    {
-        "title": "Pandas",
-        "image": "pandas.png",
-        "description": "Pandas"
+        "title": "SQL",
+        "image": "sql.png",
+        "description": "SQL"
     },
     {
         "title": "Scikit-Learn",
@@ -55,19 +45,56 @@
         "description": "PyTorch"
     },
     {
-        "title": "MATLAB",
-        "image": "matlab.png",
-        "description": "MATLAB"
+        "title": "Hugging Face",
+        "image": "hugging_face.png",
+        "description": "Hugging Face"
     },
     {
-        "title": "Flask",
-        "image": "flask.png",
-        "description": "Flask"
+        "title": "Amazon Bedrock",
+        "image": "bedrock.png",
+        "description": "Amazon Bedrock"
     },
     {
-        "title": "Plotly",
-        "image": "plotly.png",
-        "description": "Plotly"
+        "title": "ChatGPT",
+        "image": "chatgpt.png",
+        "description": "ChatGPT"
+    },
+    {
+        "title": "Pandas",
+        "image": "pandas.png",
+        "description": "Pandas"
+    },
+    {
+        "title": "Jira",
+        "image": "jira.png",
+        "description": "Jira"
+    },
+    {
+        "title": "Git",
+        "image": "git.png",
+        "description": "Git"
+    },
+    {
+        "title": "C#",
+        "image": "csharp.png",
+        "description": "C#"
+    },
+    {
+        "title": "C++",
+        "image": "cpp.png",
+        "description": "C++"
+    },
+     {
+      "title": "JavaScript",
+      "image": "javascript.png",
+      "description": "JavaScript"
+    },
+    {
+        "title": "HTML / CSS",
+        "image": "html_css.png",
+        "description": "HTML / CSS"
     }
+
+    
   ]
   

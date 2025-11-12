@@ -1,5 +1,6 @@
 .home-page {
     min-height: 89vh!important;
+    scroll-behavior: smooth;
 }
 
 .profile-info {
@@ -50,6 +51,29 @@
     font-size: clamp(0.8rem, 0.3rem + 1vw, 1rem)!important;
     margin-bottom: 2rem;
     animation: slideLeft 1s ease forwards;
+    animation-delay: .7s;
+    opacity: 0;
+}
+
+.underline {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.underline p{
+    margin: 0px;
+    font-size: clamp(0.8rem, 0.3rem + 1vw, 1rem)!important;
+    animation: slideTop 1s ease forwards;
+    animation-delay: .7s;
+    opacity: 0;
+}
+
+.underline img {
+    width: 1.75rem;
+    height: auto;
+    margin: 0 10px;
+    animation: slideTop 1s ease forwards;
     animation-delay: .7s;
     opacity: 0;
 }

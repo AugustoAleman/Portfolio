@@ -56,7 +56,7 @@ function ModalPrivacy(props) {
             We do not sell, trade, or otherwise transfer your personal information to outside parties. However, we may share your information with third-party service providers who assist us in operating our website or conducting our business, as long as those parties agree to keep your information confidential.<br></br>
             <br></br>
             6. Your Rights<br></br>
-            You have the right to access, correct, or delete any personal information we hold about you. If you wish to exercise these rights, please contact us at contact@octavio-aleman.tech.<br></br>
+            You have the right to access, correct, or delete any personal information we hold about you. If you wish to exercise these rights, please contact us at oa.alemanesparza@gmail.com.<br></br>
             <br></br>
             7. Changes to This Privacy Policy<br></br>
             We may update this Privacy Policy from time to time to reflect changes in our practices or for other operational, legal, or regulatory reasons. Any changes will be posted on this page, and we encourage you to review this policy periodically.<br></br>
@@ -65,7 +65,7 @@ function ModalPrivacy(props) {
             If you have any questions about this Privacy Policy or the data we collect, please contact us at:<br></br>
             <br></br>
             Octavio Augusto Aleman Esparza<br></br>
-            contact@octavio-aleman.tech<br></br>
+            oa.alemanesparza@gmail.com<br></br>
             <br></br>
             9. Consent<br></br>
             By using this website and submitting your contact information, you consent to the collection and use of your information as described in this Privacy Policy.
@@ -118,7 +118,7 @@ function ModalPrivacy(props) {
                 <br></br>
                 9. Governing Law<br></br> These Terms of Use shall be governed by and construed in accordance with the laws of Mexico, without regard to its conflict of law principles. Any legal action or proceeding arising under these Terms of Use will be brought exclusively in the courts of Mexico.<br></br>
                 <br></br>
-                10. Contact Information<br></br> If you have any questions about these Terms of Use, please contact us at:<br></br> Octavio Augusto Aleman Esparza<br></br> contact@octavio-aleman.tech<br></br> 
+                10. Contact Information<br></br> If you have any questions about these Terms of Use, please contact us at:<br></br> Octavio Augusto Aleman Esparza<br></br> oa.alemanesparza@gmail.com<br></br> 
             </p>
         </Modal.Body>
         <Modal.Footer>
@@ -138,7 +138,7 @@ function FooterComponent() {
             <Col className = 'navbar-description'>
                     <h3 className = 'footer-title'>{ name }</h3>
                     <p className = 'footer-text'>Innovative Developer Creating Tomorrow's Scalable Technologies Today. My focus is on delivering robust, scalable software that meets the challenges of the digital world. Let's collaborate to bring cutting-edge ideas to life.</p>
-                    <Row className='footer-email'><i className='bx bx-envelope'></i><p className = 'footer-text'> contact@octavio-aleman.tech</p></Row>
+                    <Row className='footer-email'><i className='bx bx-envelope'></i><p className = 'footer-text'> oa.alemanesparza@gmail.com</p></Row>
                 </Col>
                 <Row className='footer-media'>
                     <Col className = 'navbar-links'>
