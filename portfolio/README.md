@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+# Octavio Aleman — Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Personal portfolio positioning Octavio Aleman for AI leadership, product, and
+transformation roles. Single continuous page, bilingual (EN/ES), built with a
+custom "Editorial Futurism + Liquid Glass" design system.
 
-## Available Scripts
+## Stack
 
-In the project directory, you can run:
+- **React 18** (Create React App) — no UI framework
+- **Plain CSS** with design tokens (`src/assets/styles/variables.css`, `global.css`)
+- **i18n**: React Context + locale files, `localStorage` persistence, browser detection with EN fallback
+- Fonts: Cormorant Garamond (display), Be Vietnam Pro (body), IBM Plex Mono (metadata)
+- Icons: Boxicons (CDN). Analytics: Google Analytics (gtag).
 
-### `npm start`
+No Bootstrap, MUI, styled-components, or router — the previous versions' heavy
+dependencies were removed.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Run
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```bash
+cd Portfolio/portfolio
+npm install
+npm start        # http://localhost:3000
+npm run build    # production build → build/
+```
 
-### `npm test`
+## Architecture
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+src/
+  App.js                      # composes all sections in order
+  context/LanguageContext.js  # EN/ES provider + useLocale() hook
+  hooks/
+    useScrollReveal.js        # IntersectionObserver reveal (reduced-motion aware)
+    usePointerParallax.js     # subtle hero pointer parallax (fine-pointer only)
+  components/
+    Navbar.js  Footer.js  Aurora.js   # Aurora = fixed ambient background field
+  sections/                   # one file per page section
+    HeroSection, ImpactSection, InitiativesSection (Work),
+    LeadershipSection, EnablementSection, JourneySection,
+    RecognitionSection, GlobalSection, AboutSection, ContactSection
+  locales/
+    en.js  es.js              # ← ALL site content lives here
+  assets/styles/
+    variables.css  global.css
+```
 
-### `npm run build`
+### Editing content
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**All copy, metrics, links, and data are in `src/locales/en.js` and `src/locales/es.js`.**
+Edit those files — no component changes needed. Keep both locales in sync.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+See **`ASSETS_NEEDED.md`** for the photographs and links still to be supplied
+(hero portrait, recognition images, external links) and exactly how to wire them in.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Notes
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- The CV/résumé is served directly from `public/resume.pdf` (no backend needed).
+- `src/pages/` holds the original student-project pages, kept as a recoverable
+  archive; they are not imported by the app and not part of the build.
+- Respects `prefers-reduced-motion`; includes skip link, focus styles, semantic
+  landmarks, and alt text for accessibility.
